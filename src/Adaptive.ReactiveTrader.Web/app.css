@@ -4,7 +4,6 @@
     margin: 0;
     width: 100%;
     height: 100%;
-
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -30,9 +29,9 @@ table {
     cursor: pointer;
 }
 
-.one-way-price table:hover {
-    background-color: #2F5078;
-}
+    .one-way-price table:hover {
+        background-color: #2F5078;
+    }
 
 .normal-tile {
     display: inline-block;
@@ -59,44 +58,44 @@ table {
 
 .tile a:link {
     float: right;
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
 .tile a:visited {
     float: right;
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
 .tile a:hover {
     float: right;
-    text-decoration:underline;
+    text-decoration: underline;
     color: #90AFC1;
 }
 
 .tile a:active {
     float: right;
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
 .arrow-up {
-	width: 0; 
-	height: 0;
+    width: 0;
+    height: 0;
     margin: auto;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-bottom: 8px solid #3FCF1E;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 8px solid #3FCF1E;
 }
 
 .arrow-down {
-	width: 0; 
-	height: 0;
+    width: 0;
+    height: 0;
     margin: auto;
-	border-left: 6px solid transparent;
-	border-right: 6px solid transparent;
-	border-top: 8px solid #CC3350;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #CC3350;
 }
 
 .error {
@@ -138,22 +137,22 @@ table {
 }
 
 #reconnect-link:link {
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
 #reconnect-link:visited {
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
 #reconnect-link:hover {
-    text-decoration:underline;
+    text-decoration: underline;
     color: #90AFC1;
 }
 
 #reconnect-link:active {
-    text-decoration:none;
+    text-decoration: none;
     color: #90AFC1;
 }
 
@@ -165,6 +164,83 @@ table {
     height: 230px;
 }
 
+    #blotter-area table thead tr {
+        color: #787878;
+        border-bottom: 1px solid #E8E9EA;
+    }
+
+    #blotter-area table tbody {
+        overflow: auto;
+        height: 204px;
+    }
+
+        #blotter-area table tbody tr {
+            border-bottom: 1px dashed #E8E9EA;
+        }
+
+    #blotter-area #dateHeader {
+        width: 200px;
+        text-align: left;
+        padding: 0 10px;
+    }
+
+    #blotter-area #dirHeader {
+        width: 100px;
+        text-align: center;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #ccyHeader {
+        width: 100px;
+        text-align: left;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #notionalHeader {
+        text-align: right;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #rateHeader {
+        width: 100px;
+        text-align: right;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #statusHeader {
+        width: 100px;
+        text-align: center;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #valueDateHeader {
+        width: 200px;
+        text-align: center;
+        padding: 2px 10px;
+    }
+
+    #blotter-area #traderHeader {
+        width: 150px;
+        text-align: left;
+        padding: 2px 10px;
+    }
+
+    #blotter-area .rejected td {
+        text-decoration: line-through;
+    }
+
+    #blotter-area td.tradeStatus {
+        text-align: center;
+    }
+
+    #blotter-area .rejected td.tradeStatus {
+        text-decoration: none;
+        color: red;
+        font-weight: 600;
+    }
+
+
+
 #status-bar-area {
     position: fixed;
     left: 0;
@@ -173,4 +249,37 @@ table {
     height: 30px;
     background-color: #DEE3E8;
     white-space: nowrap;
+}
+
+    #status-bar-area table {
+        background-color: #DEE3E8;
+        color: black;
+    }
+
+        #status-bar-area table.disconnected {
+            background-color: #CE3C1C;
+            color: white;
+        }
+
+        #status-bar-area table tr td {
+            font-size: 14px;
+            padding: 3px 10px;
+            width: 100%;
+        }
+
+#weAreAdaptiveCell {
+    padding: 3px;
+}
+
+    #weAreAdaptiveCell img {
+        float: right;
+        margin-right: 5px;
+    }
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
 }
