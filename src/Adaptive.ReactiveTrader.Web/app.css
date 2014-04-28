@@ -12,6 +12,19 @@
     user-select: none;
 }
 
+#githubBanner {
+    z-index: 1000;
+}
+
+    #githubBanner img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+    }
+#tiles-area .tile {
+    padding: 2px;
+}
 table {
     border-collapse: collapse;
     width: 100%;
