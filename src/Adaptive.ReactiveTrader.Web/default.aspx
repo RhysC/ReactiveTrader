@@ -36,13 +36,13 @@
     <script type="text/html" id="one-way=price-template">
         <table data-bind="click: onExecute">
             <tr>
-                <td class="secondary-foreground" style="font-size: 16px" data-bind="text: direction"></td>
+                <td class="direction" data-bind="text: direction"></td>
             </tr>
             <tr>
-                <td style="width: 100%;">
-                    <span data-bind="text: bigFigures" class="secondary-foreground" style="font-size: 18px;"></span>
-                    <span data-bind="text: pips" class="primary-foreground" style="font-size: 48px;"></span>
-                    <span data-bind="text: tenthOfPips" class="secondary-foreground" style="font-size: 18px"></span>
+                <td class="price">
+                    <span data-bind="text: bigFigures"></span>
+                    <span data-bind="text: pips" class="pips" ></span>
+                    <span data-bind="text: tenthOfPips"></span>
                 </td>
             </tr>
         </table>
