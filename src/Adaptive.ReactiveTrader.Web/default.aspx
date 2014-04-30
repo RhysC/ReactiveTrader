@@ -68,16 +68,16 @@
 
     <!-- AFFIRMATION TILE TEMPLATE -->
     <script type="text/html" id="affirmation-template">
-        <table style="height: 144px;">
+        <table class="result-table">
             <tr>
                 <td>
                     <span data-bind="text: currencyPair" class="tile-symbol"></span>
-                    <span data-bind="if: rejected" class="tile-symbol" style="float: right; margin-right: 10px; font-weight: 500;">REJECTED</span>
+                    <span data-bind="if: rejected" class="tile-symbol rejected">REJECTED</span>
                 </td>
             </tr>
             <tr>
-                <td style="font-size: 16px">
-                    <span data-bind="style: { 'textDecoration': rejected ? 'line-through' : '' }" style="color: white">
+                <td class="affirmation-details">
+                    <span class="affirmation-price" data-bind="css: { 'rejected': rejected }">
                         <span data-bind="text: direction" class="secondary-foreground"></span>
                         <span data-bind="text: dealtCurrency" class="primary-foreground"></span>
                         <span data-bind="text: notional" class="primary-foreground"></span>
@@ -105,7 +105,7 @@
 
     <!-- ERROR TILE TEMPLATE -->
     <script type="text/html" id="error-template">
-        <table style="height: 144px;">
+        <table class="result-table">
             <tr>
                 <td class="tile-symbol">Error</td>
             </tr>

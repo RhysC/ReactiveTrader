@@ -47,18 +47,23 @@ table {
     .one-way-price table td.direction {
         font-size: 16px;
         color: #90AFC1;
-    }.one-way-price table td.price {
+    }
+
+    .one-way-price table td.price {
         width: 100%;
     }
-     .one-way-price table td.price span {
-       color: #90AFC1;
-       font-size: 18px;
-    }
-     .one-way-price table td.price .pips {
-       color: #FFFFFF;
-       font-size: 48px;
-    }
-     .one-way-price table:hover {
+
+        .one-way-price table td.price span {
+            color: #90AFC1;
+            font-size: 18px;
+        }
+
+        .one-way-price table td.price .pips {
+            color: #FFFFFF;
+            font-size: 48px;
+        }
+
+    .one-way-price table:hover {
         background-color: #2F5078;
     }
 
@@ -136,6 +141,12 @@ table {
     font-size: 18px;
     color: #FFFFFF;
 }
+
+    .tile-symbol.rejected {
+        float: right;
+        margin-right: 10px;
+        font-weight: 500;
+    }
 
 .notional {
     background-color: transparent;
@@ -296,6 +307,19 @@ table {
             width: 100%;
         }
 
+.affirmation-details {
+    font-size: 16px;
+}
+.affirmation-price {
+    color: white;
+}
+.affirmation-price.rejected {
+    text-decoration: line-through;
+}
+
+.result-table {
+    height: 144px;
+}
 #weAreAdaptiveCell {
     padding: 3px;
 }
